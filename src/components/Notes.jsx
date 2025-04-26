@@ -6,7 +6,6 @@ function Notes({ notes = [], setNotes = () => {} }) {
     const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
     const updateNotes = notes.map((note) => {
       const savedNote = savedNotes.find((n) => n.id === note.id);
-      console.log("savedNote", savedNote);
       if (savedNote) {
         return { ...note, position: savedNote.position };
       } else {

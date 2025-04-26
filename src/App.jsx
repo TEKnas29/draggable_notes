@@ -22,7 +22,6 @@ function App() {
     setNotes(updatedNotes);
     // localStorage.setItem("notes", JSON.stringify(updatedNotes));
     setNote("");
-    console.log("note", note);
   }, [note]);
   return (
     <>
